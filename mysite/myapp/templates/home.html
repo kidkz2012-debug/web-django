@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Обо мне</title>
+
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="/" style="color: gray">Главная</a>
+            <a href="/about/">Об авторе</a>
+            <a href="/user/">Профиль пользователя</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="about">
+            <section class="about-text">
+                <p class="hello">Привет! 👋</p>
+
+                <h1>Это небольшая веб-страница на <span>Django</span></h1>
+
+                <p class="description">
+                    Django - это высокоуровневый веб-фреймворк на Python, который позволяет быстро создавать веб-приложения.
+                </p>
+
+                <p class="description">
+                    Особенно приятно работать с Django, так как он предоставляет множество встроенных инструментов для разработки.
+                </p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>Мой первый Django-сайт 🚀</p>
+    </footer>
+</body>
+</html>

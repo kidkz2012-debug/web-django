@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/user_profile.css' %}">
+    <title>Профиль пользователя</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/"">Главная</a>
+            <a href="/about/">Об авторе</a>
+            <a href="/user/" style="color: gray">Профиль пользователя</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Профиль пользователя: {{ username }}</h1>
+        <p>Имя: {{ username }}</p>
+        <p>Возраст: {{ age }}</p>
+        <p>Страна-город: {{ city }}</p>
+        <p>IP-адрес: {{ ip_address }}</p>
+        <p>О себе: {{ about_me }}</p>
+    </main>
+
+    <footer class="hint">Чтобы найти пользователя, добавьте в URL "/username". Например: /user/Ivan</footer>
+
+</body>
+</html>

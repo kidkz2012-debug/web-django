@@ -7,5 +7,5 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('about/', views.about, name='about'),
     path('user/<str:username>/', views.user_profile, name='user_profile'),
-    path('user/', views.user_profile_no, name='user_profile')
+    path('user/', views.user_profile, name='user_profile', kwargs={'username': 'Гость'})
 ]
